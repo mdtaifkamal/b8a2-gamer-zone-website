@@ -18,7 +18,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 180px;    
+    padding: 0px 180px;
 }
 
 .logo a {
@@ -64,7 +64,7 @@ nav li a {
     margin-right: 20px;
 }
 
-/* main section styles */
+/* banner section styles */
 
 main {
     /* max-width: 1440px; */
@@ -136,6 +136,80 @@ h4 {
     text-decoration: none;
 }
 
+/* video section styles */
+
+.videos-container {
+    padding: 0px 100px;
+}
+
+.thumbnails {
+    display: flex;
+    justify-content: space-evenly;    
+}
+
+#funny-videos {
+    color: #0B0223;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    margin: 100px 0px 0px 0px;
+}
+
+h5 {
+    color: #534C64;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+#funny {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* play section styles */
+
+.play-container {
+    display: flex;    
+    padding: 160px;
+    align-items: center;
+    justify-content: space-between;    
+}
+
+.instantly {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
+}
+
+#play-instantly {
+    color: #FF42A5;
+}
+
+p {
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 30px;
+}
+
+.play-images {
+    position: relative;    
+}
+
+.image-1 {
+    position: relative;       
+}
+
+.image-2 {
+    position: absolute;
+    bottom: -75px;
+    left: -150px;    
+}
 
 /* footer section styles */
 
@@ -190,39 +264,6 @@ footer {
     text-align: center;
 }
 
-/* video section styles */
-
-.videos-container {    
-    padding: 0px 100px;
-}
-
-.thumbnails {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-#funny-videos {
-    color: #0B0223;
-    text-align: center;
-    font-size: 48px;
-    font-weight: 700;
-    margin: 100px 0px 0px 0px;
-}
-
-h5 {
-    color: #534C64;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 400;
-    margin-bottom: 20px;
-}
-
-#funny {
-    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
 
 
 /* media query */
