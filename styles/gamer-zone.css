@@ -18,7 +18,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 180px;
+    padding: 0px 140px;
 }
 
 .logo a {
@@ -57,7 +57,8 @@ nav li a {
     display: flex;
     background-color: rgba(11, 2, 35, 0.10);
     border-radius: 8px;
-    padding: 12px 20px;
+    padding: 14px 20px;
+    align-items: center;
 }
 
 .youtube {
@@ -66,18 +67,12 @@ nav li a {
 
 /* banner section styles */
 
-main {
-    /* max-width: 1440px; */
-    margin: 0 auto;
-    width: 1600px;
-}
-
 .banner-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0px 120px;
-    margin: auto;
+    background-image: linear-gradient(#8C57EE0D, #F144AE0D);
 }
 
 .banner-images {
@@ -121,7 +116,7 @@ h4 {
     font-weight: 600;
     margin-top: 20px;
     margin-right: 10px;
-    text-decoration: none;
+    cursor: pointer;
 }
 
 .rogue {
@@ -133,7 +128,7 @@ h4 {
     font-size: 20px;
     font-weight: 600;
     margin-top: 20px;
-    text-decoration: none;
+    cursor: pointer;
 }
 
 /* video section styles */
@@ -144,7 +139,7 @@ h4 {
 
 .thumbnails {
     display: flex;
-    justify-content: space-evenly;    
+    justify-content: center;
 }
 
 #funny-videos {
@@ -173,10 +168,10 @@ h5 {
 /* play section styles */
 
 .play-container {
-    display: flex;    
-    padding: 160px;
+    display: flex;
+    padding: 130px;
     align-items: center;
-    justify-content: space-between;    
+    justify-content: space-between;
 }
 
 .instantly {
@@ -198,32 +193,39 @@ p {
 }
 
 .play-images {
-    position: relative;    
+    position: relative;
 }
 
 .image-1 {
-    position: relative;       
+    position: relative;
 }
 
 .image-2 {
     position: absolute;
     bottom: -75px;
-    left: -150px;    
+    left: -150px;
 }
 
 /* icons section styles */
 
-.icons-container{
+.icons-container {
     display: flex;
     flex-wrap: wrap;
-    padding: 100px 100px;
+    padding: 100px 60px;
     justify-content: center;
 }
 
-.x{
+.x {
     display: flex;
     align-items: center;
     gap: 10px;
+    cursor: pointer;
+}
+
+.x:hover {
+    border: 1px solid #FF42A5;
+    border-radius: 20px;
+    color: #FF42A5;
 }
 
 /* footer section styles */
@@ -234,8 +236,10 @@ footer {
 
 .last-section {
     justify-content: center;
-    margin: auto;
+    /* margin: auto; */
     width: 100%;
+    padding: 50px 0px;
+
 }
 
 .logo-1 a {
@@ -251,6 +255,10 @@ footer {
 
 .links {
     display: flex;
+    justify-content: center;
+}
+
+.links h4 {
     color: #FFF;
     font-size: 18px;
     font-weight: 600;
@@ -265,65 +273,67 @@ footer {
 
 .links-2 {
     display: flex;
-    gap: 20px;
-    color: rgba(255, 255, 255, 0.60);
     justify-content: center;
+    gap: 40px;
+}
+
+.links-2 h5 {
+    color: rgba(255, 255, 255, 0.60);
     font-size: 16px;
     font-weight: 500;
 }
 
-.copyright {
+.copyright h5 {
     color: rgba(255, 255, 255, 0.60);
     font-size: 16px;
     font-weight: 500;
     text-align: center;
 }
 
-
-
 /* media query */
 
 /* mobile devices */
 
 @media screen and (max-width: 576px) {
-
     nav {
-        flex-direction: column;
-        padding: 30px;
+        flex-direction: column;        
     }
 
     nav>ul {
         flex-direction: column;
-        gap: 40px;
+        gap: 20px;
     }
 
-    footer {
-        padding: 50px;
+    .banner-container {
+        background: none;
+        flex-direction: column;
+        padding: 0px;
     }
 
-    .links {
-        flex-wrap: wrap
+    .banner-images {
+        max-width: 20%;
     }
 
-    .social-media {
-        width: 70%;
-        flex-wrap: wrap;
-        margin: auto;
+    #funny-videos {
+    font-size: 15px;
     }
 
-    .links-2 {
-        flex-wrap: wrap;
-        margin: auto;
-    }
+    
+
+h5 {
+    font-size: 8px;
 }
 
-/* tablet or medium devices */
+.thumbnails{
+    flex-direction: column;
+}
 
-@media screen and (min-width: 576px) and (max-width: 992px) {
+.play-container{
+    flex-direction: column;
+}
 
-    nav {
-        flex-direction: column;
-        padding: 30px;
-    }
+.icons-container{
+    flex-direction: row;
+}
 
-    .last-section {}
+    
