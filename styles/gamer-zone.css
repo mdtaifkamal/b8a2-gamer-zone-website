@@ -211,6 +211,21 @@ p {
     left: -150px;    
 }
 
+/* icons section styles */
+
+.icons-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px 100px;
+    justify-content: center;
+}
+
+.x{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 /* footer section styles */
 
 footer {
